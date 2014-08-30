@@ -14,7 +14,6 @@ $blue: #3366cc;
 $yellow: #f3c120;
 $font-stack: rockwell, serif;
 
-@import "body";
 @import "header";
 @import "footer";
 
@@ -25,10 +24,26 @@ $font-stack: rockwell, serif;
     }
 }
 
+body {
+  font-family: $font-stack;
+  font-size: 62.5%;
+  /*1em now == 10px; 1.5em == 15px; etc.*/
+  margin: 0;
+  padding: 0;
+}
+
 // placeholder
 %padded {
   display: block;
   padding-top: 3em;
+}
+
+.thanks {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+  width: 65%;
 }
 
 #main {
@@ -38,7 +53,7 @@ $font-stack: rockwell, serif;
     @include header-text(3em);
       // font-family: futura, sans-serif;
       // font-size: 3em;
-    margin-bottom: 0;
+    margin-bottom: 12px;
     text-align: center;
   }
 
@@ -79,20 +94,12 @@ $font-stack: rockwell, serif;
     @extend %padded;
   }
 
-    .retina {
-      height: 40em;
-      width: 40em;
-    }
+  .retina {
+    height: 40em;
+    width: 40em;
+  }
 
-    img {
-      margin: 0 0 5em 1em;
-    }
+  img {
+    margin: 0 0 5em 1em;
+  }
 }
-
-/*
-footer {
-  background-color: $green;
-  height: 15em;
-  @import "nested"
-}
- */
