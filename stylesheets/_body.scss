@@ -1,0 +1,15 @@
+body {
+  font-family: $font-stack;
+  font-size: 62.5%;
+  /*1em now == 10px; 1.5em == 15px; etc.*/
+  margin: 0;
+  padding: 0;
+}
+
+.thanks {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+  width: 65%;
+}
